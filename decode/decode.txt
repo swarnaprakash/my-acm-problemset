@@ -1,0 +1,40 @@
+Problem name	:	DECODE
+Time Limit		:	3s
+
+
+Sriram and his younger brother Lakshman always fight with each other for using the computer at home. After yesterday's  fight Lakshman got very angry.So, he decided to run his brother's work.He opened Sriram's project report and removed all the spaces in it. 
+When Sriram opened it so that he can take a printout,he was shocked.Now he is trying to correct things with a dictionary.But, he finds this is very difficult.With a given string of letters he finds more than one sentance can be formed.For example "batman" can be interpreted as it is or as"bat    man".No other combination is a valid word.
+This is where Sriram needs your help. Given the string messed up by Lakshman and the valid words in Sriram's dictionary,write a program to find out in exactly how many ways the string can be interpreted.
+
+Input Format:
+There will be multiple cases to consider.The first line consists of the number of test cases  t<50.Then there is a blank line.
+The first line of each test case contains the messsed up string whose length is <=100 characters.
+In the next line there will be an integer n<=100 which is the number of words in the dictionary.
+The next n lines  will contain a string each, which are the words in the dictionary.All words have only lower case letters and <=100 characters and do not contain spaces in between.Each test will be separated by a blank line.
+
+Output Format:
+For each test case print on separate line the number of possible ways the messed up string can be interpreted.Answer will fit in a 32-bit signed integer.
+
+Sample Input:
+2
+
+notout
+4
+not
+out
+notout
+wicket
+
+aaa
+2
+a
+aa
+
+
+Sample Output:
+2
+3
+
+Explanation:
+for the first case "notout" can be read as   "not out" or "notout" .There is no other way.
+

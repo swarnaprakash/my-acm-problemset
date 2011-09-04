@@ -1,0 +1,36 @@
+PROBLEM NAME:       Automated Teller Machines
+TIME LIMIT  :	2 s
+
+
+SBI , Anna university has installed 30 ATMs(automated teller machines) numbered from  0 to 29 . ATM numbered ' i '   pays exactly an amount of  Rs. 2^i  .vijay chidambaram wants to get exactly  'n' Rupees . He wants to know the numbers of the ATMs he has to use to get exactly n Rupees . He is lazy & hates calculations .so he asks u to write a program to help him.
+
+Example:
+To get Rs.5  get Rs.4 from ATM#2 & Rs.1 from ATM#0
+
+INPUT:
+In the first line of input there is one positive integer t , which equals the number of test cases.
+In each of the following t lines there is one positive integer ,which is the amount vijay wants to get.
+
+
+OUTPUT:
+For each test case output a strictly DECREASING sequence of positive integers from the range [0 - 29],one per line,  representing the number of the ATMs vijay has to use to get exactly n Rupees.print a blank line after each test case;
+
+
+ The input will be such that it is always possible to get that amount using the ATMs.
+
+Sample Input:
+3
+5
+2
+12
+
+Sample output:
+2
+0
+
+1
+
+3
+2
+
+

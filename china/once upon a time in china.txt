@@ -1,0 +1,40 @@
+Problem Name	:	ONCE UPON A TIME IN CHINA
+Time Limit	:	1s
+
+Once upon a time in china , there lived Wu yangwi.He had two children Bu yangwi and Yu yangwi.Bu yangwi had one child Su yangwi who had no child, while Yu yangwi had two children Hu yangwi & Ju yangwi , Hu yangwi had ..........(this goes on).This is too confusing and we want to know how many generations they existed ,given information about  yangwi family. you have to write a program to find that.
+
+The tree will be represented in the following specification.
+A specification will be sequence of digits(without spaces).
+The first digit in the specification tells the number of children of the first yangwi ancestor.
+Then follows the specification of the first child. 
+Then follows the specification of the next child and so on ...
+
+And government of china had imposed a strict rule restricting the number of children , one can have , to TWO.
+
+INPUT:
+
+First line contains the number of test cases.Each test consists of a string of charaters (without spaces) representing the specification(it will contain either '0' or '1' or '2').length of the string will be less than 100.
+
+OUTPUT:
+For each test print an integer in a separate line,the number of generations for which the family existed.
+
+Sample Input:
+4
+10
+200
+210200
+110
+
+Sample Output:
+2
+2
+3
+3
+
+EXPLANATION:
+
+for the third test case , first member had two chidren , the first child had one child who had no child, the second child had two children , both of them have no child.So this faily existed for three generations
+
+
+
+

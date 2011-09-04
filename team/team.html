@@ -1,0 +1,39 @@
+<p>
+Krush Chika has been appointed as a selector for Chennai's IBL cricket team. He  wants his son Anrath to be in the team.Unfortunately Anrath had a terrible Panji season last year and has a poor average. So Krush comes up with a clever plan to get his son into the team.
+<P>
+Krush specifies two cut-off numbers k and C.let X1,X2,X3.......,Xn be the previous season scores of a player.Now the values of     k/X1,  k/X2  ,and so on upto k/Xn are calculated.Note that this integer division i.e 5/3 is 1 not 2.Then all the values are added together to get s.Krush says for a player to be selected s should be  greater than or equal to C, the cutoff specified by him.
+<P>
+For a given value of C ,he wants to fix a minimum cutoff k so that his son can get a place in the team.But this k should not be too low that the sum s is less than C.Now you have to help him.Given the values X1,X2,X3,...Xn and the cut-off number C,find the smallest possible k so that s is atleast  C.
+
+<h3>Input Format:</h3><P>
+There will be multiple cases to consider.each test case begins with an integer n representing the number of scores.The next line contains the n scores i.e X1,X2,X3,...Xn separated by spaces.
+The next line contains the cut-off number C.Each test will be separated by a blank line. Input ends when a value of n is given as 0 and it should not be processed.
+<p>
+<h3>Output Format:</h3><p>
+For each test case print on a separate line the smallest possible value of k satisfying the above conditions.Answer will be <= 10^9.
+<p>
+<h3>Constraints:</h3><p>
+n<=100
+x1,x2,x3.....<=10^9
+C<= 10^9
+<p>
+
+<h3>Sample input:</h3><p>
+<pre>
+3
+20 23 25
+3
+
+3
+23 20 22
+4
+
+0
+</pre>
+<p>
+<h3>Sample Output:</h3>
+<p>
+<pre>
+25
+40
+</pre>

@@ -1,0 +1,34 @@
+PROBLEM NAME : minmove sorting
+TIME LIMIT : 2 s
+
+Marksheets of students were valuated and arranged in a random order.But it must be restored in ascending order of marks.Teachers are lazy and hence want to sort the marksheets in minimum number of moves.In each move you can take out a marksheet and reinsert it at any position. (Neighbouring marksheets slide right and left as necessary )
+
+You are given the marks of the marksheets.print the minimum number of moves requires to sort them in ascending order of marks.
+
+Input:
+Each test case begins with a single integer N(<=100) representing the number of marksheets.on the next line there are N space seperated integers (<=100) representing the marks of the marksheets in the order in which they were arranged initially.N=0 indicates the end of test & should not be processed.A blank line separates each test.
+
+Output:
+for each test case output a line containing a single integer representing the minimum number of moves to sort.
+
+Sample Input:
+4
+10 40 30 20
+
+3
+10 20 30
+
+5
+50 60 50 50 60
+
+0
+
+Sample Output:
+
+2
+0
+1
+
+
+
+

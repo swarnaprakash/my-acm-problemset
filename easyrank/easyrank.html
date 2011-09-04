@@ -1,0 +1,54 @@
+<div align="left">
+
+<h3>Problem Name	:	Standard Competition Ranking</h3>
+<h3>Time Limit		:	4s</h3>
+
+<p>
+In competition ranking, items that compare equal receive the same ranking number, and then a gap is left in the ranking numbers. The number of ranking numbers that are left out in this gap is one less than the number of items that compared equal. Equivalently, each item's ranking number is 1 plus the number of items ranked above it. This ranking strategy is frequently adopted for competitions, as it means that if two (or more) competitors tie for a position in the ranking, the position of all those ranked below them is unaffected (ie, a competitor only comes second if exactly one person scores better than them, third if exactly two people score better than them, fourth if exactly three people score better than them, etc).
+<p>
+Thus if A ranks ahead of B and C (which compare equal) which are both ranked ahead of D, then A gets ranking number 1 ("first"), B gets ranking number 2 ("joint second"), C also gets ranking number 2 ("joint second") and D gets ranking number 4 ("fourth"). In this case, nobody would get ranking number 3 ("third") and that would be left as a gap.
+
+<p>
+Given a list of team names and the points obtained by them in a contest, your task is to prepare the contest rankings.
+
+<h3>Input:</h3>
+<p>
+The input begins with the number of testcaset t &le 100.Each test begins with the name of the contest,which is a string of atmost 10 uppercase letters.Then follows an integer N &le 10000 representing the number of teams in that contest.Then follows N lines each containing the team name followed by the points scored by that team.Team name is a string of atmost 10 lowercase letters.Team names in a contest are guarenteed to be distinct.Each test is separated by a blank line.
+
+<h3>Output:</h3>
+<p>
+Output the ranklist for each contest as mentioned above.For each test output a line <i>contest_name</i> RESULTS</i>.
+Then Output N lines containing the rank of a team followed by the <i>team_name</i>,separated by a space.Output teams in ascending order of their ranks.Teams having the same rank should be listed in lexicographic order.
+
+<h3>Sample Input:</h3>
+<pre>
+2
+CEGCONTEST
+4
+bbb 4
+aaa 5
+ccc 4
+ddd 2
+
+ABC
+3
+aaa 4
+bbb 5
+ccc 6
+
+</pre>
+
+<h3>Sample Output:</h3>
+<pre>
+CEGCONTEST RESULTS
+1 aaa
+2 bbb
+2 ccc
+4 ddd
+ABC RESULTS
+1 ccc
+2 bbb
+3 aaa
+</pre>
+
+</div>

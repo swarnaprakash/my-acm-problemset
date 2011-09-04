@@ -1,0 +1,49 @@
+<div align="left">
+<p><h3>Problem Name: Bottom Coder Forums</h3><p>
+<p><h3>Time Limit: 2s</h3><p>
+
+<p>
+In bottom coder forums there is a feedback system for each post.Feedback for each post is represented in terms of + and - (plus and minus).Any topcoder member ,after logging in , can PLUS a post or MINUS a post .But any user can give atmost +1 votes or atmost -1 votes. After giving +1 votes to a post ,the subsequent pluses by that user are ignored.Similar is the case for minus.
+
+<p>
+Also a coder can change his feedback by pressing the opposite sign.For instance if an user has given +1 votes  to a post he change his feedback to 0 votes by pressing minus once(Note that instead if he presses minus twice,his feedback will be -1 votes)
+
+Given a list of clicks (username and plus/minus) you have to find the feedback for a post;
+
+<p><h3>Input:</h3><p>
+Multiple posts.Each post begins with n &le 100 , the number of votes.Each vote is represented in a single line.First the username of the topcoder member which is a string(length &le 20 ) of alphabets,digits and underscore '_'.Then follows the vote which is a single character either '+' or '-' seperated by a space.usernames are case INSENSITIVE.
+n=0 indicates the end of tests .
+
+<p><h3>Output:</h3><p>
+For each tests output a single line containing the number of the post (as given in the input ,assuming the number of the first post in the input is 1 ) in the form "POST#number:" followed by a space and then followed by the feedback.Feedback consists of the number of pluses & minuses in the form "+pluses -minuses" (see sample tests)
+
+
+<p><h3>Sample Input:</h3><p>
+<pre>
+3
+vijay03 +
+swarnaprakash +
+aBc -
+6
+vijay_comc +
+vijay_comc +
+vijay_comc +
+vijay_comc -
+mitsiddharth +
+suryamit88 -
+6
+aBc +
+Abc +
+ABC +
+aaa -
+aaa +
+aaa +
+0
+</pre>
+<p><h3>Sample Output:</h3><p>
+<pre>
+POST#1: +2 -1
+POST#2: +1 -1
+POST#3: +2 -0
+</pre>
+</div>

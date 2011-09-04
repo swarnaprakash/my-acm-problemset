@@ -1,0 +1,51 @@
+<div align="left">
+<h3>Problem Name : Computer Networks</h3>
+<h3>Time Limit : 4s</h3>
+
+<p>
+Bytelandian Scientists have built a new computer network.Any connection in the network is bidirectional.After building the network scientists are concerned about establishing communication between some computers.Communication can be established between two computers if there is a communication path between the two computers.For instance if there is a connection between C1 and C2 ,and a connection between C2 and C3 ,then C1 can establish communication with C3.
+
+<p>
+Given a set of connections in the network you have to find if we can establish communication between some computers.
+
+<h3>Input:</h3>
+<p>
+Each test begins with two integers N &le 100 and M &le N*(N-1)/2 , representing the number of computers in the network and number of connections.Then follow M connections containing two space separated integers a and b , 1 &le a,b &le N .This means there is a bidirectional connection between a and b.Then follows an integer Q &le 5000 representing the number of querries.Then follows Q lines containing two integers p,q 1 &le p,q &le N ,asking if communication can be established between the computers p and q. N=M=0 indicates the end of tests.A blank line will separate the tests.
+
+<h3>Output:</h3>
+<p>
+Output Q lines for each test case containing the word "YES" if a connection can be established else "NO".Print a blank line after each test case.
+
+<h3>Sample Input:</h3>
+<pre>
+4 2
+1 2
+2 3
+2
+1 3
+1 4
+
+6 5
+1 2
+2 3
+1 3
+4 5
+5 6
+3
+1 3
+4 6
+1 5
+
+0 0
+</pre>
+<h3>Sample Output:</h3>
+<pre>
+YES
+NO
+
+YES
+YES
+NO
+
+</pre>
+</div>

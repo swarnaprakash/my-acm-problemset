@@ -1,0 +1,44 @@
+<div align="left">
+<h3>Problem Name: PVR</h3>
+<h3>Time Limit : 5s</h3>
+
+<p>
+P.V.Ramakrishna ,popularly known as PVR in the ECE dept of Thambi university , is known for setting difficult and interesting Question papers.All the Questions are problems.Some of the problems depend on the result of some other problem in the same Question Paper and thus the other problem should be solved first inorder to solve the current problem.For instance Problem 3 might depend on problem 2 which in turn might depend on problem 1.So we must solve problem 1 ,then problem 2 and then problem 3.Sometimes in an attempt to set a very difficult question paper PVR sets paper such that the problems have cyclic dependencies.Then the question paper becomes unsolvable.For example if P1 depends on P2 ,P2 depends on P3 and P3 depends on P1,then the problems cannot be solved.
+
+<p>
+Given a list of dependencies your task is to find is a question paper is solvable or unsolvable.
+
+<h3>Input:</h3>
+<p>
+Multiple Test cases.Each test will begin with two integers M &le 200 and N &le 100 on a single line representing  the number of dependencies and the number of problems in the question paper respectively.Then follow M dependencies in separate lines.
+Each line contains two space separated integers a ,b ( a != b) .This means problem a depends on problem b (problem b should be solved first inorder to solve problem a ).Problems are numbered from 1. N=M=0 indicates the end of tests.Total Number of tests &le 50.Tests will be separated by a blank line.
+
+<h3>Output:</h3>
+<p>
+For each testcase output the word "SOLVABLE" if the question paper is solvable,else "UNSOLVABLE" on a separate line.
+
+<h3>Sample Input:</h3>
+<pre>
+4 5
+5 4
+4 3
+3 2
+2 1
+
+3 3
+2 3
+1 2
+3 1
+
+1 5
+3 5
+
+0 0
+</pre>
+<h3>Sample Output:</h3>
+<pre>
+SOLVABLE
+UNSOLVABLE
+SOLVABLE
+</pre>
+</div>

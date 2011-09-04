@@ -1,0 +1,41 @@
+PROBLEM NAME:     Christmas Lights
+TIME LIMIT :  2 s
+
+
+Anna university's Christian Mission ( ACM ) plans to celebrate this christmas in a grand way by decorating a long stretch of road using small serial lights. It plans to use  10^7 lights numbered from  1 to 10^7,arranged in ascending order. It has a special switch that gets two numbers START,END  ( START<=END) as input & toggles (switches on the lights that are already off & swithes off the lights that are already off) all the lights numbered between START & END ,inclusive. After performing a series of switching operations we would like to know the condition of certain lights.Initially all lights are off.
+
+INPUT:
+Each test case begins with a line containing two integers  Ns (<=300) representing the number of switching operations & Nq(<=100) representing the number of Queries.The following Ns lines contain two integers start,end (start<=end) from the range [1,10^7] .The next  Nq lines each contain a single integer q from the range [1,10^7],which represents the number of the light we want to query. A line containing Ns=Nq=0 indicates the end of tests & you should not process that .A blank line will separate each tests.
+
+OUTPUT:
+for each test case ouput Nq lines , one for each query. output "YES" if light q is switched on ,after performing all switching operations, else output "NO" .
+
+After each test print a blank line.
+
+Sample Input:
+3 4
+1 5
+3 7
+9 12
+3
+5
+10
+12
+
+2 2
+2 1000000
+1 999999
+1
+999999
+
+0 0
+
+Sample output:
+NO
+NO
+YES
+YES
+
+YES
+NO
+

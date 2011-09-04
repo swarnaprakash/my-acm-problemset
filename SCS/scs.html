@@ -1,0 +1,38 @@
+<div align="left">
+<h3>Problem Name: SCS</h3>
+<h3>Time Limit : 2s</h3>
+
+<p>
+A supersequence of a string is a new string which is formed from the original string by inserting some of the characters without disturbing the relative positions of the original characters.For example "ABCDEFGH" is a supersequence of "AGH",but is not a supersequence of "AHG".
+<p>
+The shortest common supersequence of two strings (SCS) is a common supersequence of minimal length.
+For two input strings, an SCS can be formed from an LCS(longest Common subsequence) easily.By inserting the non-LCS symbols from both strings into LCS ,while preserving the symbol order, we get the SCS.
+<p>
+Given two strings your task is to find the length of the SCS.
+
+<h3>Input:</h3>
+<p>
+Number of testcases t &le 100 on the first line.Each test contains two strings in separate lines.The strings will contain ONLY uppercase alphabets.Length of the strings &le 100.
+
+<h3>Output:</h3>
+<p>
+Output one line per test containing the length of the SCS.
+
+<h3>Sample Input:</h3>
+<pre>
+3
+ABC
+BAC
+AGH
+ABCDEFGH
+AHG
+ABCDEFGH
+</pre>
+<h3>Sample Output:</h3>
+<pre>
+4
+8
+9
+</pre>
+</div>
+

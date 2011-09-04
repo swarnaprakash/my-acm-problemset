@@ -1,0 +1,48 @@
+<div align="left">
+
+<h3>Problem Name	:	CPU Scheduling Algorithms</h3>
+<h3>Time Limit		:	2s</h3>
+
+<p>
+In any Operating System the CPU-scheduler selects one among the processes in memory that are ready to execute and allocates the CPU to one of them.There are several algorithms for CPU scheduling. In this problem we are concerned about two scheduling algorithms  First-Come First-Served(FCFS) algorithm and Round Robin(RR) Scheduling algorithm.
+
+<p>
+In FCFS scheduling the process that requests the CPU first is allocated the CPU first. Consider three processes P1, P2, P3 (given in the order in which they arrive) with CPU-burst times 7 ms ,3 ms, 2ms ,then in FCFS scheduling then P1 is executed from 0 to 7 ms ,P2 from 7 to 10 ms and P3 from 10 to 12 ms.
+
+<p>
+In RR scheduling a small unit of time called a <i>time quantum</i> or <i> time slice </i> is defined. The CPU scheduler picks the first process from the ready queue (queue of processes that are ready to execute),sets a timer to interrupt afer 1 time quantum and dispatches the process. One of the two things will happen. The selected process may have a CPU burst time less than 1 time quantum. In this case,the process itself will release the CPU voluntarily.The scheduler will then proceed to the next process in the ready queue. Otherwise, if the CPU burst time of the currently running process is longer than 1 time quantum, the timer will go off and will cause an interrupt. A context switch will be executed and the process will be put at the tail of the ready queue. The CPU scheduler will then select the next process in the ready queue.
+<p>
+Consider the above example with time quantum =  2ms. P1 is executed from 0 to 2 ms. Context switching occurs. P2 is executed from 2 to 4 ms. P3 from 4 to 6 ms. P1 is executed from 6 to 8 ms. Now P2 should be executed , but it requires only 1 more millisecond to complete. So CPU is vouluntarily released after executing P2 for 1 ms. Thus, P2 is executed from 8 to 9 ms.P3 is completed . Now only P1 has to be completed and is executed from 9 to 12 ms.
+
+<p>
+The performance of the RR algorithm depends heavily on the size of the time quantum.If the time quantum is very large(infinite) it behaves like FCFS algorithm.In the above example if time quantum = 15 ms then it behaves like FCFS.Actually a time quantum of 7 ms is enough to make it behave like FCFS algorithm.Given CPU burst times of the processes your task is to find the minimum time quantum required to make RR scheduling behave like FCFS scheduling.
+
+<h3>Input:</h3>
+<p>
+Multiple test cases.Each test case begins with N , the number of processes in the ready queue. 1 &le N &le 10000.
+Next line contains N space separated integers representing the CPU burst-times of the process ,in milliseconds.They are given in the order in which the processes arrive.1 &le all CPU burst times &le 2 *10^9. N=0 indicates the end of tests.
+
+<h3>Output:</h3>
+<p>
+Output the answer for each case in a separate line.Time quantum should atleast be 1 ms.
+
+<h3>Sample Input:</h3>
+<pre>
+3
+7 3 2
+3
+1 1 1
+4
+1 4 2 3
+0
+</pre>
+
+<h3>Sample output:</h3>
+<pre>
+7
+1
+4
+</pre>
+
+</div>
+

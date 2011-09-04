@@ -1,0 +1,3 @@
+A Magic square of order n is an arrangement of n^2 distinct integers in a square such that the n numbers in all rows, all columns, and both diagonals sum to the same constant. A normal magic square contains the integers from 1 to n^2.
+Ex: ...
+

@@ -1,0 +1,35 @@
+<div align="left">
+<h3>Problem Name : Cuboids</h3>
+<h3>Time Limit : 1s</h3>
+
+<p>
+  	A cuboid is a rectangular solid. Given two cuboids, which may or may not overlap, you have to find out the total volume enclosed by them. A volume is considered enclosed if it falls completely within at least one of the specified cuboids. A volume that is in between two cuboids, but not inside both of them, is not considered enclosed.
+
+<h3>Input:</h3>	
+<p>
+Number of test cases t &le 50 on the first line.Each test consists of two lines describing the two cuboids.Description of a cuboid consists of six space separated integers x1,y1,z1,x2,y2,z2. (x1,y1,z1) represents the left-bottom-back vertex and (x2,y2,z2) the right-top-front vertex, assuming that x-coordinate increases from left to right ,y-coordinate increases from bottom to top ,z-coordinate increases from back to front.The cuboids are always aligned with the grid. In other words, the cuboids are never tilted or twisted with respect to the axes.
+<p>
+It is guarenteed that x1 &lt x2 ,y1 &lt y2 ,z1 &lt z2. Absolute value of all co-ordinates is &le 5000.
+
+<h3>Output:</h3>
+<p>
+Output one line per test containing the total enclosed volume.
+
+<h3>Sample Input:</h3>
+<pre>
+3
+0 0 0 1 1 1
+-1 -1 -1 0 0 0
+-1 -1 -1 1 1 1
+0 0 0 2 2 2
+0 0 0 1 2 3
+10 11 12 11 12 13
+</pre>
+<h3>Sample Output:</h3>
+<pre>
+2
+15
+7
+</pre>
+</div>
+

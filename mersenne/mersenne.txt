@@ -1,0 +1,21 @@
+Problem Name	:	Mersenne Primes
+Time Limit		:	2s
+
+In mathematics, a Mersenne number is a number that is one less than a power of two Mn = 2^n-1.A Mersenne prime is a Mersenne number that is a prime number.Given an integer 1<= n <= 2^31-1 (max value of 32 bit signed int) , print "MERSENNE PRIME" if the number is a mersenne prime , "MERSENNE" if the number is a mersenne number and not a prime number , "PRIME" if the number is prime and not a mersenne number , "NONE" if the number is neither prime nor mersenne.
+
+Multiple tests(Number of tests <=100).First line indicates the number of tests t.Then t lines follow each containing a integer.Output a line per test case.
+
+
+Sample input:
+4
+5
+7
+10
+15
+
+Sample output:
+PRIME
+MERSENNE PRIME
+NONE
+MERSENNE
+

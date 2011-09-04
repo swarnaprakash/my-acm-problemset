@@ -1,0 +1,52 @@
+Problem name	:	RADIO MACHI
+Time limit		:	2s
+
+
+
+Sudharshan a.k.a RADIO MACHI , enjoys listening songs and he cant live without FM radio.In his current residence he listens to many radio stations.But he is planning to shift his residence to a new location and he is worried about the number of radio stations that will be available in the new location.He has the database of all known Radio stations and you have to write a program to answer his queries.
+
+Each Radio station will cover a rectangular area.You will be given the bottom-left co-ordinates and top-right co-ordinates of the rectangle.The radio station will cover all the points inside and on the rectangle (including the vertices ).For each query you will be given a point , for which you have to find the number of radio stations you can listen to , at that point.
+
+Input:
+
+Multiple test cases.Each test begins with two integers N and Q.
+N=Q=0 indicates the end of tests. 
+N represents the number of radio stations known.Q represents number of Queries.On the next N lines is the coverage area of a radio station,each line contains four space separated integers x1,y1,x2,y2 (x1<=x2 and y1<=y2) where (x1,y1) and(x2,y2) represent the co-ordinates of bottom-left & top-right vertex of the rectangle respectively. 
+On the next Q lines contain two space separated integers,representing the point to be queried.Each test will be separated by a blank line.
+
+OUTPUT:
+for each test output Q lines containing an integer ,which is the number of radio stations you can listen at the corresponding point queried.
+print a blank line after each test.
+
+Constraints:
+All co-ordinates will be less than 10^9.
+N<=100 and Q<=100.
+
+Sample Input:
+4 2
+0 0 2 2
+1 1 2 2
+1 1 3 3
+2 3 3 3
+0 1
+2 3
+
+2 2
+10 20 30 40
+0 0 40 40
+25 25
+1 1
+
+Sample Output:
+1
+2
+
+2
+1
+
+
+
+
+
+
+
